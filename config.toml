@@ -1,0 +1,38 @@
+baseURL = "https://www.ravooo.xyz"
+languageCode = "zh-CN"
+title = "Ravooo"
+theme = "maupassant"
+preserveTaxonomyNames = true
+disablePathToLower = true
+hasCJKLanguage = true
+summaryLength = 140
+
+[author]
+  name = "Ravooo"
+
+[params]
+  author = "Ravooo"
+  subtitle = "仿生人会梦见电子羊吗"
+  keywords = "Java MySQL Redis 后端开发"
+  description = "仿生人会梦见电子羊吗"
+
+[params.cc]
+    name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
+    link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+
+[markup]
+  [markup.highlight]
+    lineNos = true
+    style = "github"
+
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 4

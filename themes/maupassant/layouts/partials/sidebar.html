@@ -1,0 +1,22 @@
+<div id="secondary">
+    <section class="widget">
+        {{ partial "recent_post" . }}
+    </section>
+
+    <section class="widget">
+        {{ partial "categories" . }}
+    </section>
+
+    <!-- <section class="widget">
+        {{ partial "tags" . }}
+    </section> -->
+
+    <!-- {{ partial "links" . }} -->
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="{{ "index.xml" | absURL }}">RSS</a></li>
+        </ul>
+    </section>
+</div>
