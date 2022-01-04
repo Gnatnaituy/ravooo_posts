@@ -14,7 +14,7 @@ summaryLength = 140
   author = "Ravooo"
   subtitle = "仿生人会梦见电子羊吗"
   keywords = "Java MySQL Redis 后端开发"
-  description = "仿生人会梦见电子羊吗"
+  description = "仿生人会梦见电子羊吗?"
 
 [params.cc]
     name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
