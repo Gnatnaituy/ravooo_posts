@@ -28,9 +28,9 @@ date="2022-03-06T22:33:07+08:00"
 调用wait() 的线程有四种方法继续执行
 
 > 1. Some other thread invokes the notify method for this object and thread T happens to be arbitrarily chosen as the thread to be awakened.
-2. Some other thread invokes the notifyAll method for this object.
-3. Some other thread interrupts thread T.
-4. The specified amount of real time has elapsed, more or less. If timeout is zero, however, then real time is not taken into consideration and the thread simply waits until notified.
+> 2. Some other thread invokes the notifyAll method for this object.
+> 3. Some other thread interrupts thread T.
+> 4. The specified amount of real time has elapsed, more or less. If timeout is zero, however, then real time is not taken into consideration and the thread simply waits until notified.
 
 
 当wait() 线程恢复执行后
@@ -52,8 +52,8 @@ date="2022-03-06T22:33:07+08:00"
 
 | |是否放弃持有锁|是否可中断|唤醒方式|
 |---|---|---|---|
-|sleep()|不放弃任何持有的锁|是|timeout<br />interrupt|
-|wait()|放弃当前对象的锁<br />不放弃持有的其它对象的锁|是|notify<br />notifyAll<br />timeout<br />interrupt|
+|sleep()|不放弃任何持有的锁|是|timeout,interrupt|
+|wait()|放弃当前对象的锁,不放弃持有的其它对象的锁|是|timeout,interrupt,notify,notifyAll|
 
 
 
@@ -117,7 +117,6 @@ public class SleepVsNotify {
         sleepVsNotify.testSleepWait();
     }
 }
-
 ```
 
 
